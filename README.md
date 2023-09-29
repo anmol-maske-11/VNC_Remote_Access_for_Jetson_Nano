@@ -52,4 +52,4 @@ Now disable the default encryption of the VNC connection. To do this, paste thes
 
 `gsettings set org.gnome.Vino prompt-enabled false`
 
-###Now Reboot your nano and VNC will be enabled on your Jetson Nano.
+###Now Reboot your nano and VNC will be enabled on your Jetson Nano
