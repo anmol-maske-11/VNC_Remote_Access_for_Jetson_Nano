@@ -9,8 +9,8 @@ This NVIDIA Jetson Nano L4T has poor support for USB Wi-Fi adapters and most ada
 ## Step 2: Start desktop sharing
 
 1. First, open the terminal and paste this line.
-a. `sudo apt update`
-b. `sudo apt-get upgrade`
+<br>a. `sudo apt update`
+<br>b. `sudo apt-get upgrade`
 
 2. After both the command install nano editor
 a. `sudo apt-get install nano`
