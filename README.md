@@ -8,31 +8,31 @@ This NVIDIA Jetson Nano L4T has poor support for USB Wi-Fi adapters and most ada
 
 ## Step 2: Start desktop sharing
 
-First, open the terminal and paste this line.
-`sudo apt update`
-`sudo apt-get upgrade`
+1. First, open the terminal and paste this line.
+a. `sudo apt update`
+b. `sudo apt-get upgrade`
 
-``After both the command install nano editor
-`sudo apt-get install nano`
+2. After both the command install nano editor
+a. `sudo apt-get install nano`
 
-Next paste this link in the terminal and press enter
-`sudo nano /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml`
+3. Next paste this link in the terminal and press enter
+a. `sudo nano /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml`
 
-Next paste the following key into opened XML file 
+4. Next paste the following key into opened XML file 
 
-<p><b>Open Key for XML file present in this repo</b></p>
+<p><b> a. Open Key for XML file present in this repo</b></p>
 
-Press `Ctrl + O` to Save than press Enter
-To move back to the terminal press `Ctrl + Z`
+b. Press `Ctrl + O` to Save than press Enter
+c. To move back to the terminal press `Ctrl + Z`
 
-Next compile the edited XML file
-`sudo glib-compile-schemas /usr/share/glib-2.0/schemas`
+5. Next compile the edited XML file
+a. `sudo glib-compile-schemas /usr/share/glib-2.0/schemas`
 
-Now crashing of Desktop Sharing must have stopped. So Click on 'Search' icon and search for 'Desktop Sharing'. Open it and complete the following changes:
+6. Now crashing of Desktop Sharing must have stopped. So Click on 'Search' icon and search for 'Desktop Sharing'. Open it and complete the following changes:
 
-Tick mark both the <b>Sharing</b> options. 
-Under <b>Security</b> Tick mark the 'Require the user to enter this password' and enter the password for VNC session.
-Close Desktop Sharing.
+a. Tick mark both the <b>Sharing</b> options. 
+b. Under <b>Security</b> Tick mark the 'Require the user to enter this password' and enter the c. password for VNC session.
+d. Close Desktop Sharing.
 
 ## Step 3: Start the VNC server on each startup
 
@@ -41,9 +41,9 @@ Click on 'Search' icon and search for 'Startup Applications'. Open it. Now, clic
 Now disable the default encryption of the VNC connection. To do this, paste these lines on 
 terminal and press enter:
 
-`gsettings set org.gnome.Vino require-encryption false`
+a. `gsettings set org.gnome.Vino require-encryption false`
 
-`gsettings set org.gnome.Vino prompt-enabled false`
+b. `gsettings set org.gnome.Vino prompt-enabled false`
 
 ###Now Reboot your nano and VNC will be enabled on your Jetson Nano
 
@@ -52,7 +52,7 @@ terminal and press enter:
 Login to your Jetson Nano board. Connect your Jetson Nano and your Personal Laptop to the same wifi network. Open terminal in Jetson Nano and type `ifconfig`. You will get the IP address which is assigned to your Jetson Nano. In my case assigned IP address is 192.168.137.222.
 
 Now lets confirm VNC is working or not. Paste this in the terminal:
-`ps -ef|grep vnc`.
+a. `ps -ef|grep vnc`.
 
 Now once you know your IP and confirmed that VNC is running, lets move on to your personal laptop(Client Machine).
 
