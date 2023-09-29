@@ -19,9 +19,7 @@ This NVIDIA Jetson Nano L4T has poor support for USB Wi-Fi adapters and most ada
 <br>a. `sudo nano /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml`.
 
 4. Open Key_for_XML_file present in this repo
-
 <br>a. Paste the following key into opened XML file.
-
 <br>b. Press `Ctrl + O` to Save than press Enter.
 <br>c. To move back to the terminal press `Ctrl + Z`.
 
