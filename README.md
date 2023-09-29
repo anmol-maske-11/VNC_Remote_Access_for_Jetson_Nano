@@ -20,15 +20,7 @@ Next paste this link in the terminal and press enter
 
 Next paste the following key into opened XML file 
 
-<key name=’enabled’ type=’b’>
-<summary>Enable remote access to the desktop</summary>
-<description>
-If true, allows remote access to the desktop via the RFB
-protocol. Users on remote machines may then connect to the
-desktop using a VNC viewer.
-</description>
-<default>true</default>
-</key>
+<p><b>Open Key for XML file present in this repo</b></p>
 
 Press `Ctrl + O` to Save than press Enter
 To move back to the terminal press `Ctrl + Z`
@@ -66,6 +58,6 @@ Now once you know your IP and confirmed that VNC is running, lets move on to you
 
 ### Note: In my case I an using Ubantu Linux (ThinkServer Machine)
 
-
+Open Remmina click the add button on the top left, then in Protocol option select 'Remmina VNC Plugin', then click the (…)button which is in the right end of the 'Server' IP address entering bar. This (…) button should automatically scan and show the name of your jetson Nano. Click on ipv4 and then 'Save and Connect'.
 
 
