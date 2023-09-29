@@ -27,7 +27,6 @@ This NVIDIA Jetson Nano L4T has poor support for USB Wi-Fi adapters and most ada
 <br>a. `sudo glib-compile-schemas /usr/share/glib-2.0/schemas`.
 
 6. Now crashing of Desktop Sharing must have stopped. So Click on 'Search' icon and search for 'Desktop Sharing'. Open it and complete the following changes:
-
 <br>a. Tick mark both the <b>Sharing</b> options. 
 <br>b. Under <b>Security</b> Tick mark the 'Require the user to enter this password' and enter the password for VNC session.
 <br>c. Close Desktop Sharing.
