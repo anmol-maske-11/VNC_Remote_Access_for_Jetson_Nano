@@ -53,6 +53,6 @@ Now once you know your IP and confirmed that VNC is running, lets move on to you
 
 ### Note: In my case I an using Ubantu Linux (ThinkServer Machine)
 
-Open Remmina click the add button on the top left, then in Protocol option select 'Remmina VNC Plugin', then click the (…)button which is in the right end of the 'Server' IP address entering bar. This (…) button should automatically scan and show the name of your jetson Nano. Click on ipv4 and then 'Save and Connect'.
+Open Remmina click the add button on the top left, then in Protocol option select 'Remmina VNC Plugin', then click the (…)button which is in the right end of the 'Server' IP address entering bar. This (…) button should automatically scan and show the name of your jetson Nano. Click on (in my case ipv4 bmek) and then 'Save and Connect'.
 
 
