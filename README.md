@@ -15,25 +15,37 @@ This NVIDIA Jetson Nano L4T has poor support for USB Wi-Fi adapters and most ada
 2. After both the command install nano editor.
 <br>a. `sudo apt-get install nano`.
 
-3. Next paste this link in the terminal and press enter.
+<img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/1.png">
+
+4. Next paste this link in the terminal and press enter.
 <br>a. `sudo nano /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml`.
 
-4. Open Key_for_XML_file present in this repo
+<img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/1.png">
+
+5. Open Key_for_XML_file present in this repo
 <br>a. Paste the following key into opened XML file.
 <br>b. Press `Ctrl + O` to Save than press Enter.
 <br>c. To move back to the terminal press `Ctrl + Z`.
 
-5. Next compile the edited XML file.
+<img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/1.png">
+
+7. Next compile the edited XML file.
 <br>a. `sudo glib-compile-schemas /usr/share/glib-2.0/schemas`.
 
-6. Now crashing of Desktop Sharing must have stopped. So Click on 'Search' icon and search for 'Desktop Sharing'. Open it and complete the following changes:
+8. Now crashing of Desktop Sharing must have stopped. So Click on 'Search' icon and search for 'Desktop Sharing'. Open it and complete the following changes:
 <br>a. Tick mark both the <b>Sharing</b> options. 
 <br>b. Under <b>Security</b> Tick mark the 'Require the user to enter this password' and enter the password for VNC session.
 <br>c. Close Desktop Sharing.
 
+<img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/1.png">
+
 ## Step 3: Start the VNC server on each startup
 
 Click on 'Search' icon and search for 'Startup Applications'. Open it. Now, click on `Add`, then type `Vino` in the name box. Paste `/usr/lib/vino/vino-server` in the command box. Click `Save` and then `Close`.
+
+<img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/1.png">
+
+<img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/1.png">
 
 Now disable the default encryption of the VNC connection. To do this, paste these lines on 
 terminal and press enter:
@@ -48,6 +60,8 @@ Login to your Jetson Nano board. Connect your Jetson Nano and your Personal Lapt
 
 Now lets confirm VNC is working or not. Paste this in the terminal:
 <br>a. `ps -ef|grep vnc`.
+
+<img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/1.png">
 
 Now once you know your IP and confirmed that VNC is running, lets move on to your personal laptop(Client Machine).
 
