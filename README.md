@@ -22,7 +22,7 @@ This NVIDIA Jetson Nano L4T has poor support for USB Wi-Fi adapters and most ada
 
 <img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/XML_file.png">
 
-4. Open Key_for_XML_file present in this repo
+4. Open Key_for_XML_file.txt present in this repo
 <br>a. Paste the following key into opened XML file.
 <br>b. Press `Ctrl + O` to Save than press Enter.
 <br>c. To move back to the terminal press `Ctrl + Z`.
