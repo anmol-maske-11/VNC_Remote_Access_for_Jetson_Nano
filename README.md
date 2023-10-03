@@ -17,22 +17,22 @@ This NVIDIA Jetson Nano L4T has poor support for USB Wi-Fi adapters and most ada
 
 <img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/install_nano.png">
 
-4. Next paste this link in the terminal and press enter.
+3. Next paste this link in the terminal and press enter.
 <br>a. `sudo nano /usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml`.
 
 <img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/XML_file.png">
 
-5. Open Key_for_XML_file present in this repo
+4. Open Key_for_XML_file present in this repo
 <br>a. Paste the following key into opened XML file.
 <br>b. Press `Ctrl + O` to Save than press Enter.
 <br>c. To move back to the terminal press `Ctrl + Z`.
 
 <img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/Paste_code.png">
 
-7. Next compile the edited XML file.
+5. Next compile the edited XML file.
 <br>a. `sudo glib-compile-schemas /usr/share/glib-2.0/schemas`.
 
-8. Now crashing of Desktop Sharing must have stopped. So Click on 'Search' icon and search for 'Desktop Sharing'. Open it and complete the following changes:
+6. Now crashing of Desktop Sharing must have stopped. So Click on 'Search' icon and search for 'Desktop Sharing'. Open it and complete the following changes:
 <br>a. Tick mark both the <b>Sharing</b> options. 
 <br>b. Under <b>Security</b> Tick mark the 'Require the user to enter this password' and enter the password for VNC session.
 <br>c. Close Desktop Sharing.
@@ -41,9 +41,14 @@ This NVIDIA Jetson Nano L4T has poor support for USB Wi-Fi adapters and most ada
 
 ## Step 3: Start the VNC server on each startup
 
-Click on 'Search' icon and search for 'Startup Applications'. Open it. Now, click on `Add`, then type `Vino` in the name box. Paste `/usr/lib/vino/vino-server` in the command box. Click `Save` and then `Close`.
+Click on 'Search' icon and search for 'Startup Applications'. 
+1. Open it. Now, click on `Add`. A new box will appear.
 
 <img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/Startup_app.png">
+   
+2. Then type `Vino` in the name box.
+3. Paste `/usr/lib/vino/vino-server` in the command box.
+4. Click `Save` and then `Close`.
 
 <img src="https://github.com/anmol-maske-11/IMG_Videos/blob/main/add_startup.png">
 
